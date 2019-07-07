@@ -17199,7 +17199,7 @@ t*=0.1
 s=F.bq(a,!1).a.b
 if(typeof s!=="number")return s.p()
 r=[N.ai]
-q=T.xs(H.h([L.h1("Hi there! My name is",o,A.eA(o,o,C.aC,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o),o,2),L.h1("Yonathan\nZetune",o,A.eA(o,o,C.n,o,o,o,o,o,o,o,o,o,C.az,o,o,!0,o,o,o,o,o,o),o,5),new T.dc(o,10,o,o),L.h1("A student studying at Texas A&M University in College Station, TX.\nInterests include...\nProjects....",!0,A.eA(o,o,C.a4,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o),o,1.5),new T.dc(o,20,o,o),T.kJ(H.h([D.PD(o,L.h1("Resume",o,o,o,o),o,C.dl,o,o,o,o,o,o,o,o,o,o,o,o,new K.Dm(),new V.aO(10,10,10,10),new S.cv(C.x),o,o),new T.dc(20,o,o,o),A.Po(new Y.dm(C.dl,1,C.H),L.h1("Say Hi!",o,o,o,o),C.dl,o,new K.Dn(),new V.aO(10,10,10,10),new S.cv(C.x))],r),C.ak,C.dj,C.a2)],r),C.bK,C.aK,C.a2)
+q=T.xs(H.h([L.h1("Howdy! My name is",o,A.eA(o,o,C.aC,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o),o,2),L.h1("Yonathan\nZetune",o,A.eA(o,o,C.n,o,o,o,o,o,o,o,o,o,C.az,o,o,!0,o,o,o,o,o,o),o,5),new T.dc(o,10,o,o),L.h1("A student studying at Texas A&M University in College Station, TX.\nInterests include...\nProjects....",!0,A.eA(o,o,C.a4,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o),o,1.5),new T.dc(o,20,o,o),T.kJ(H.h([D.PD(o,L.h1("Resume",o,o,o,o),o,C.dl,o,o,o,o,o,o,o,o,o,o,o,o,new K.Dm(),new V.aO(10,10,10,10),new S.cv(C.x),o,o),new T.dc(20,o,o,o),A.Po(new Y.dm(C.dl,1,C.H),L.h1("Say Hi!",o,o,o,o),C.dl,o,new K.Dn(),new V.aO(10,10,10,10),new S.cv(C.x))],r),C.ak,C.dj,C.a2)],r),C.bK,C.aK,C.a2)
 p=F.bq(a,!1).a.b
 if(typeof p!=="number")return p.p()
 r=B.rt(T.xs(H.h([new K.BO(o),new T.dc(o,s*0.1,o,o),new K.Dl(q,o),new T.dc(o,p*0.2,o,o),new K.Fv(o)],r),C.ak,C.aK,C.a2),o)
