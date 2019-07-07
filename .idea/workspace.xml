@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef24ec9c-98a4-454e-8a4b-7a81f5b62a77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/profile_page.dart" afterDir="false" />
-    </list>
+    <list default="true" id="ef24ec9c-98a4-454e-8a4b-7a81f5b62a77" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +159,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1027" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -257,6 +254,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/profile_page.dart">
       <provider selected="true" editor-type-id="text-editor">
