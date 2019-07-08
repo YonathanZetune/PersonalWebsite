@@ -1,6 +1,6 @@
-
 import 'package:YZPersonalWebsite/responsive_widget.dart';
 import 'package:flutter_web/material.dart';
+import 'package:flutter_web_ui/ui.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key key}) : super(key: key);
@@ -16,24 +16,24 @@ class ProfilePage extends StatelessWidget {
         ),
         drawer: ResponsiveWidget.isSmallScreen(context)
             ? Drawer(
-          child: ListView(
-            padding: const EdgeInsets.all(20),
-            children: <Widget>[
-              NavButton(
-                text: "about",
-                onPressed: () {},
-              ),
-              NavButton(
-                text: "work",
-                onPressed: () {},
-              ),
-              NavButton(
-                text: "contact",
-                onPressed: () {},
-              ),
-            ],
-          ),
-        )
+                child: ListView(
+                  padding: const EdgeInsets.all(20),
+                  children: <Widget>[
+                    NavButton(
+                      text: "about",
+                      onPressed: () {},
+                    ),
+                    NavButton(
+                      text: "work",
+                      onPressed: () {},
+                    ),
+                    NavButton(
+                      text: "contact",
+                      onPressed: () {},
+                    ),
+                  ],
+                ),
+              )
             : null,
         body: SingleChildScrollView(
           child: AnimatedPadding(
@@ -104,9 +104,9 @@ class PKDot extends StatelessWidget {
         Text(
           "Welcome!",
           textScaleFactor: 2,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
+//          style: TextStyle(
+//            fontWeight: FontWeight.bold,
+//          ),
         ),
         SizedBox(
           width: 5,
@@ -132,9 +132,9 @@ class NavButton extends StatelessWidget {
 
   const NavButton(
       {Key key,
-        @required this.text,
-        @required this.onPressed,
-        this.color = Colors.orange})
+      @required this.text,
+      @required this.onPressed,
+      this.color = Colors.orange})
       : super(key: key);
 
   @override
@@ -152,24 +152,24 @@ class NavButton extends StatelessWidget {
 
 class ProfileInfo extends StatelessWidget {
   profileImage(context) => Container(
-    height: ResponsiveWidget.isSmallScreen(context)
-        ? MediaQuery.of(context).size.height * 0.25
-        : MediaQuery.of(context).size.width * 0.25,
-    width: ResponsiveWidget.isSmallScreen(context)
-        ? MediaQuery.of(context).size.height * 0.25
-        : MediaQuery.of(context).size.width * 0.25,
-    decoration: BoxDecoration(
-      backgroundBlendMode: BlendMode.luminosity,
-      color: Colors.transparent,
+        height: ResponsiveWidget.isSmallScreen(context)
+            ? MediaQuery.of(context).size.height * 0.25
+            : MediaQuery.of(context).size.width * 0.25,
+        width: ResponsiveWidget.isSmallScreen(context)
+            ? MediaQuery.of(context).size.height * 0.25
+            : MediaQuery.of(context).size.width * 0.25,
+        decoration: BoxDecoration(
+          backgroundBlendMode: BlendMode.luminosity,
+          color: Colors.transparent,
 //            borderRadius: BorderRadius.circular(40),
-      shape: BoxShape.circle,
-      image: DecorationImage(
-        image: AssetImage("YZPic.JPG"),
-        alignment: Alignment.center,
-        fit: BoxFit.cover,
-      ),
-    ),
-  );
+          shape: BoxShape.circle,
+          image: DecorationImage(
+            image: AssetImage("YZPic.JPG"),
+            alignment: Alignment.center,
+            fit: BoxFit.cover,
+          ),
+        ),
+      );
 
   final profileData = Column(
     crossAxisAlignment: CrossAxisAlignment.start,
@@ -177,26 +177,25 @@ class ProfileInfo extends StatelessWidget {
       Text(
         "Howdy! My name is",
         textScaleFactor: 2,
-        style: TextStyle(color: Colors.orange),
+//        style: TextStyle(color: Colors.orange),
       ),
       Text(
         "Yonathan\nZetune",
         textScaleFactor: 5,
-        style: TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
-        ),
+//        style: TextStyle(
+//          color: Colors.white,
+//          fontWeight: FontWeight.bold,
+//        ),
       ),
       SizedBox(
         height: 10,
       ),
       Text(
         "A student studying at Texas A&M University in College Station, TX.\n"
-            "Interests include...\n"
-            "Projects....",
+        "Some of my projects include TAMU Spirt and FRC Now\n",
         softWrap: true,
         textScaleFactor: 1.5,
-        style: TextStyle(color: Colors.white70),
+//        style: TextStyle(color: Colors.white70),
       ),
       SizedBox(
         height: 20,
@@ -268,7 +267,7 @@ class SocialInfo extends StatelessWidget {
                 color: Colors.blue,
               ),
               NavButton(
-                text: "Twitter",
+                text: "Linkedin",
                 onPressed: () {},
                 color: Colors.blue,
               ),
@@ -282,9 +281,9 @@ class SocialInfo extends StatelessWidget {
           Text(
             "Yonathan Zetune ©️2019",
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.grey,
-            ),
+//            style: TextStyle(
+//              color: Colors.grey,
+//            ),
           ),
         ],
       ),
@@ -309,9 +308,9 @@ class SocialInfo extends StatelessWidget {
           Text(
             "Yonathan Zetune ©️2019",
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.grey,
-            ),
+//            style: TextStyle(
+//              color: Colors.grey,
+//            ),
           ),
         ],
       ),
