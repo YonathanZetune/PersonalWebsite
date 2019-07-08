@@ -1,6 +1,5 @@
 import 'package:YZPersonalWebsite/responsive_widget.dart';
 import 'package:flutter_web/material.dart';
-import 'package:flutter_web_ui/ui.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key key}) : super(key: key);
@@ -9,32 +8,34 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveWidget(
       largeScreen: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey[800],
         appBar: AppBar(
           elevation: 0.0,
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.black54,
         ),
-        drawer: ResponsiveWidget.isSmallScreen(context)
-            ? Drawer(
-                child: ListView(
-                  padding: const EdgeInsets.all(20),
-                  children: <Widget>[
-                    NavButton(
-                      text: "about",
-                      onPressed: () {},
-                    ),
-                    NavButton(
-                      text: "work",
-                      onPressed: () {},
-                    ),
-                    NavButton(
-                      text: "contact",
-                      onPressed: () {},
-                    ),
-                  ],
-                ),
-              )
-            : null,
+        drawer:
+//        ResponsiveWidget.isSmallScreen(context)
+//            ?
+            Drawer(
+          child: ListView(
+            padding: const EdgeInsets.all(20),
+            children: <Widget>[
+              NavButton(
+                text: "about",
+                onPressed: () {},
+              ),
+              NavButton(
+                text: "work",
+                onPressed: () {},
+              ),
+              NavButton(
+                text: "contact",
+                onPressed: () {},
+              ),
+            ],
+          ),
+        ),
+        //: null,
         body: SingleChildScrollView(
           child: AnimatedPadding(
             duration: Duration(seconds: 1),
@@ -77,15 +78,15 @@ class NavHeader extends StatelessWidget {
             Row(
               children: <Widget>[
                 NavButton(
-                  text: "about",
+                  text: "About",
                   onPressed: () {},
                 ),
                 NavButton(
-                  text: "work",
+                  text: "Projects",
                   onPressed: () {},
                 ),
                 NavButton(
-                  text: "contact",
+                  text: "Contact",
                   onPressed: () {},
                 ),
               ],
@@ -153,11 +154,11 @@ class NavButton extends StatelessWidget {
 class ProfileInfo extends StatelessWidget {
   profileImage(context) => Container(
         height: ResponsiveWidget.isSmallScreen(context)
-            ? MediaQuery.of(context).size.height * 0.25
-            : MediaQuery.of(context).size.width * 0.25,
+            ? MediaQuery.of(context).size.height * 0.2
+            : MediaQuery.of(context).size.width * 0.2,
         width: ResponsiveWidget.isSmallScreen(context)
-            ? MediaQuery.of(context).size.height * 0.25
-            : MediaQuery.of(context).size.width * 0.25,
+            ? MediaQuery.of(context).size.height * 0.2
+            : MediaQuery.of(context).size.width * 0.2,
         decoration: BoxDecoration(
           backgroundBlendMode: BlendMode.luminosity,
           color: Colors.transparent,
@@ -182,10 +183,10 @@ class ProfileInfo extends StatelessWidget {
       Text(
         "Yonathan\nZetune",
         textScaleFactor: 5,
-//        style: TextStyle(
-//          color: Colors.white,
-//          fontWeight: FontWeight.bold,
-//        ),
+        style: TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+        ),
       ),
       SizedBox(
         height: 10,
@@ -195,7 +196,7 @@ class ProfileInfo extends StatelessWidget {
         "Some of my projects include TAMU Spirit and FRC Now\n",
         softWrap: true,
         textScaleFactor: 1.5,
-//        style: TextStyle(color: Colors.white70),
+        style: TextStyle(color: Colors.white70),
       ),
       SizedBox(
         height: 20,
@@ -263,7 +264,9 @@ class SocialInfo extends StatelessWidget {
             children: <Widget>[
               NavButton(
                 text: "Github",
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/Github');
+                },
                 color: Colors.blue,
               ),
               NavButton(
@@ -281,9 +284,9 @@ class SocialInfo extends StatelessWidget {
           Text(
             "Yonathan Zetune ©️2019",
             textAlign: TextAlign.center,
-//            style: TextStyle(
-//              color: Colors.grey,
-//            ),
+            style: TextStyle(
+              color: Colors.grey,
+            ),
           ),
         ],
       ),
@@ -292,7 +295,9 @@ class SocialInfo extends StatelessWidget {
         children: <Widget>[
           NavButton(
             text: "Github",
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).popAndPushNamed('/Github');
+            },
             color: Colors.blue,
           ),
           NavButton(
@@ -308,9 +313,9 @@ class SocialInfo extends StatelessWidget {
           Text(
             "Yonathan Zetune ©️2019",
             textAlign: TextAlign.center,
-//            style: TextStyle(
-//              color: Colors.grey,
-//            ),
+            style: TextStyle(
+              color: Colors.grey,
+            ),
           ),
         ],
       ),
