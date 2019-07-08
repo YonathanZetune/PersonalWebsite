@@ -191,8 +191,8 @@ class ProfileInfo extends StatelessWidget {
         height: 10,
       ),
       Text(
-        "A student studying at Texas A&M University in College Station, TX.\n"
-        "Some of my projects include TAMU Spirt and FRC Now\n",
+        "Studying at Texas A&M University in College Station, TX.\n"
+        "Some of my projects include TAMU Spirit and FRC Now\n",
         softWrap: true,
         textScaleFactor: 1.5,
 //        style: TextStyle(color: Colors.white70),
