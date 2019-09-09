@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef24ec9c-98a4-454e-8a4b-7a81f5b62a77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/profile_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YZPersonalWebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/YZPersonalWebsite.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,50 +16,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_28" />
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/profile_page.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Develop/flutter/bin/cache/dart-sdk/lib/html/dart2js/html_dart2js.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="18572" column="10" selection-start-line="18572" selection-start-column="10" selection-end-line="18572" selection-end-column="10" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/github.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/responsive_widget.dart">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -73,8 +32,8 @@
       <find>html</find>
       <find>projec</find>
       <find>emai</find>
-      <find>menu</find>
       <find>work</find>
+      <find>menu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,22 +58,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PersonalWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PersonalWebsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PersonalWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PersonalWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -173,7 +117,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" visible="true" weight="0.32967034" />
       <window_info id="Structure" side_tool="true" />
@@ -187,7 +130,7 @@
       <window_info anchor="bottom" id="Run" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Debug" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.45612246" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" />
@@ -248,13 +191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Develop/flutter/bin/cache/dart-sdk/lib/html/dart2js/html_dart2js.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18572" column="10" selection-start-line="18572" selection-start-column="10" selection-end-line="18572" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -264,11 +200,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/profile_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="255">
           <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Develop/flutter/bin/cache/dart-sdk/lib/html/dart2js/html_dart2js.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18572" column="10" selection-start-line="18572" selection-start-column="10" selection-end-line="18572" selection-end-column="10" />
         </state>
       </provider>
     </entry>
