@@ -283,7 +283,7 @@ class SocialInfo extends StatelessWidget {
                 onPressed: () {
 //                  Navigator.of(context).pushNamed('/Github');
                   html.window
-                      .open('https://github.com/YonathanZetune', 'gihub');
+                      .open('https://github.com/YonathanZetune', 'github');
                 },
                 color: Colors.blue,
               ),
@@ -320,26 +320,27 @@ class SocialInfo extends StatelessWidget {
           NavButton(
             text: "Github",
             onPressed: () {
-              Navigator.of(context).popAndPushNamed('/Github');
+//                  Navigator.of(context).pushNamed('/Github');
+              html.window
+                  .open('https://github.com/YonathanZetune', 'github');
             },
             color: Colors.blue,
           ),
           NavButton(
-            text: "Twitter",
-            onPressed: () {},
+            text: "Linkedin",
+            onPressed: () {
+              html.window
+                  .open('https://www.linkedin.com/in/yzetune/', 'linkedin');
+            },
             color: Colors.blue,
           ),
           NavButton(
             text: "Facebook",
-            onPressed: () {},
+            onPressed: () {
+              html.window.open(
+                  'https://www.facebook.com/yonathan.zetune', 'facebook');
+            },
             color: Colors.blue,
-          ),
-          Text(
-            "Yonathan Zetune ©️2019",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.grey,
-            ),
           ),
         ],
       ),
