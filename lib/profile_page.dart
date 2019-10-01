@@ -1,6 +1,7 @@
-import 'package:YZPersonalWebsite/responsive_widget.dart';
-import 'package:flutter_web/material.dart';
-import 'dart:html' as html;
+import 'package:flutter_particles/particles.dart';
+import 'package:yz_personal_website/responsive_widget.dart';
+import 'package:flutter/material.dart';
+//import 'dart:html' as html;
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key key}) : super(key: key);
@@ -9,7 +10,8 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveWidget(
       largeScreen: Scaffold(
-        backgroundColor: Colors.grey[800],
+
+        backgroundColor: Colors.grey[900],
         appBar: AppBar(
           elevation: 0.0,
           backgroundColor: Colors.black54,
@@ -42,20 +44,23 @@ class ProfilePage extends StatelessWidget {
             duration: Duration(seconds: 1),
             padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.1),
             child: ResponsiveWidget(
-              largeScreen: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  NavHeader(),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.1,
-                  ),
-                  ProfileInfo(),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                  ),
-                  SocialInfo(),
-                ],
-              ),
+              largeScreen: Stack(children: [
+                Particles(40,Colors.white30),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    NavHeader(),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.1,
+                    ),
+                    ProfileInfo(),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.2,
+                    ),
+                    SocialInfo(),
+                  ],
+                ),
+              ]),
             ),
           ),
         ),
@@ -81,24 +86,24 @@ class NavHeader extends StatelessWidget {
                 NavButton(
                     text: "Apps",
                     onPressed: () {
-                      html.window.open(
-                          'https://apps.apple.com/us/developer/yonathan-zetune/id1447059513',
-                          'iosApps');
+//                      html.window.open(
+//                          'https://apps.apple.com/us/developer/yonathan-zetune/id1447059513',
+//                          'iosApps');
                     }),
                 NavButton(
                   text: "Projects",
                   onPressed: () {
-                    html.window.open(
-                        'https://github.com/YonathanZetune?tab=repositories',
-                        'githubrepos');
+//                    html.window.open(
+//                        'https://github.com/YonathanZetune?tab=repositories',
+//                        'githubrepos');
                   },
                 ),
                 NavButton(
                   text: "Contact",
                   onPressed: () {
-                    html.window.open(
-                        'https://www.linkedin.com/in/yzetune/detail/contact-info/',
-                        'contactemail');
+//                    html.window.open(
+//                        'https://www.linkedin.com/in/yzetune/detail/contact-info/',
+//                        'contactemail');
                   },
                 ),
               ],
@@ -205,6 +210,7 @@ class ProfileInfo extends StatelessWidget {
       ),
       Text(
         "Studying at Texas A&M University in College Station, TX.\n"
+            "Previous Android Mobile Development Intern at The Washington Post.\n"
         "Some of my projects include TAMU Spirit and FRC Now\n",
         softWrap: true,
         textScaleFactor: 1.5,
@@ -221,9 +227,9 @@ class ProfileInfo extends StatelessWidget {
             child: Text("Resume"),
             color: Colors.red,
             onPressed: () {
-              html.window.open(
-                  'https://www.slideshare.net/slideshow/embed_code/key/gtPFOez1AvK0RY',
-                  'resume');
+//              html.window.open(
+//                  'https://www.slideshare.net/slideshow/embed_code/key/gtPFOez1AvK0RY',
+//                  'resume');
             },
             padding: EdgeInsets.all(10),
           ),
@@ -282,24 +288,24 @@ class SocialInfo extends StatelessWidget {
                 text: "Github",
                 onPressed: () {
 //                  Navigator.of(context).pushNamed('/Github');
-                  html.window
-                      .open('https://github.com/YonathanZetune', 'github');
+//                  html.window
+//                      .open('https://github.com/YonathanZetune', 'github');
                 },
                 color: Colors.blue,
               ),
               NavButton(
                 text: "Linkedin",
                 onPressed: () {
-                  html.window
-                      .open('https://www.linkedin.com/in/yzetune/', 'linkedin');
+//                  html.window
+//                      .open('https://www.linkedin.com/in/yzetune/', 'linkedin');
                 },
                 color: Colors.blue,
               ),
               NavButton(
                 text: "Facebook",
                 onPressed: () {
-                  html.window.open(
-                      'https://www.facebook.com/yonathan.zetune', 'facebook');
+//                  html.window.open(
+//                      'https://www.facebook.com/yonathan.zetune', 'facebook');
                 },
                 color: Colors.blue,
               ),
@@ -321,24 +327,24 @@ class SocialInfo extends StatelessWidget {
             text: "Github",
             onPressed: () {
 //                  Navigator.of(context).pushNamed('/Github');
-              html.window
-                  .open('https://github.com/YonathanZetune', 'github');
+//              html.window
+//                  .open('https://github.com/YonathanZetune', 'github');
             },
             color: Colors.blue,
           ),
           NavButton(
             text: "Linkedin",
             onPressed: () {
-              html.window
-                  .open('https://www.linkedin.com/in/yzetune/', 'linkedin');
+//              html.window
+//                  .open('https://www.linkedin.com/in/yzetune/', 'linkedin');
             },
             color: Colors.blue,
           ),
           NavButton(
             text: "Facebook",
             onPressed: () {
-              html.window.open(
-                  'https://www.facebook.com/yonathan.zetune', 'facebook');
+//              html.window.open(
+//                  'https://www.facebook.com/yonathan.zetune', 'facebook');
             },
             color: Colors.blue,
           ),

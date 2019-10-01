@@ -1,6 +1,7 @@
-import 'package:YZPersonalWebsite/profile_page.dart';
-import 'package:flutter_web/material.dart';
-import 'package:YZPersonalWebsite/github.dart';
+import 'package:yz_personal_website/profile_page.dart';
+import 'package:flutter/material.dart';
+import 'package:yz_personal_website/github.dart';
+import 'package:flutter_particles/particles.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.black,
         fontFamily: "GoogleSansRegular"
       ),
-      home: ProfilePage(),
+      home: Stack(children: [ProfilePage()]),
     );
   }
 }
