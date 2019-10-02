@@ -35477,7 +35477,7 @@ G:function(a){var u=null,t=M.iL("Welcome!",u,u,u,2),s=P.bm(0,0,1),r=S.ee(u,u,u,u
 return T.i2(H.b([t,new T.bc(5,u,u,u),new G.m9(r,q,C.aD,s,u,u)],[N.b9]),C.a2,C.an,C.S)}}
 K.Ch.prototype={
 wu:function(a){var u=null,t=F.aw(a,!1).a.a<800?F.aw(a,!1).a.b*0.2:F.aw(a,!1).a.a*0.2,s=F.aw(a,!1).a.a<800?F.aw(a,!1).a.b*0.2:F.aw(a,!1).a.a*0.2
-return M.iW(u,u,u,u,S.ee(C.hs,u,u,u,C.br,u,new X.vP(new L.ub("YZPic.JPG"),C.hw,C.ab),C.ac),u,t,u,u,u,s)},
+return M.iW(u,u,u,u,S.ee(C.hs,u,u,u,C.br,u,new X.vP(new L.ub("images/YZPic.JPG"),C.hw,C.ab),C.ac),u,t,u,u,u,s)},
 G:function(a){var u=this.c,t=[N.b9]
 return B.i0(T.i2(H.b([this.wu(a),u],t),C.a2,C.fL,C.S),T.iV(H.b([this.wu(a),new T.bc(null,F.aw(a,!1).a.b*0.1,null,null),u],t),C.a2,C.dw,C.S))}}
 K.Ci.prototype={
