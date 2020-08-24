@@ -222,7 +222,7 @@ class ProfileInfo extends StatelessWidget {
             color: Colors.red,
             onPressed: () {
               html.window.open(
-                  'https://www.dropbox.com/s/fzjk0r8gfxej8bs/ZetuneResumeFall2019Pages.pdf?dl=0',
+                  'https://www.dropbox.com/s/b7iogiceqxkevtj/ZetuneResume2020FallPages.pdf?dl=0',
                   'resume');
             },
             padding: EdgeInsets.all(10),
