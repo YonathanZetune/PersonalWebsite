@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d620b2bc-20f6-4802-8256-9140a7656437" name="Default Changelist" comment="" />
+    <list default="true" id="d620b2bc-20f6-4802-8256-9140a7656437" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +36,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -106,6 +114,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="140" y="625" key="#Project_Structure" timestamp="1598309558812">
+      <screen x="0" y="0" width="1080" height="1920" />
+    </state>
+    <state x="140" y="625" key="#Project_Structure/-1920.515.1920.1080/0.0.1080.1920@0.0.1080.1920" timestamp="1598309558812" />
     <state width="1038" height="580" key="GridCell.Tab.0.bottom" timestamp="1598308671544">
       <screen x="0" y="0" width="1080" height="1920" />
     </state>
@@ -122,5 +134,9 @@
       <screen x="0" y="0" width="1080" height="1920" />
     </state>
     <state width="1038" height="580" key="GridCell.Tab.0.right/-1920.515.1920.1080/0.0.1080.1920@0.0.1080.1920" timestamp="1598308671543" />
+    <state x="205" y="451" width="670" height="158" key="search.everywhere.popup" timestamp="1598309569938">
+      <screen x="0" y="0" width="1080" height="1920" />
+    </state>
+    <state x="205" y="451" width="670" height="158" key="search.everywhere.popup/-1920.515.1920.1080/0.0.1080.1920@0.0.1080.1920" timestamp="1598309569938" />
   </component>
 </project>
