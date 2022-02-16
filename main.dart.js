@@ -50592,7 +50592,7 @@ return A.pg(s,s,B.A,s,s,new A.dG(B.aI,new A.xg(new A.oQ("images/YZPic.JPG"),B.te
 J(a,b){var s=this.c,r=t._
 return A.mR(A.kF(A.c([this.DK(b),s],r),B.a6,B.pB,B.a_),A.pd(A.c([this.DK(b),A.cQ(null,b.L(t.w).f.a.b*0.1,null),s],r),B.a6,B.eM,B.a_))}}
 A.Pv.prototype={
-$0(){A.er("https://www.dropbox.com/s/b7iogiceqxkevtj/ZetuneResume2020FallPages.pdf?dl=0")},
+$0(){A.er("https://yonathanzetune.com/resume.pdf")},
 $S:1}
 A.Bg.prototype={
 J(a,b){var s=null,r="Linkedin",q="Facebook",p=t._
