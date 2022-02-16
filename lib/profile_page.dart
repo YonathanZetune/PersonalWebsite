@@ -257,7 +257,7 @@ class ProfileInfo extends StatelessWidget {
             color: Colors.red,
             onPressed: () {
               _launchInWebViewWithJavaScript(
-                  'https://www.dropbox.com/s/b7iogiceqxkevtj/ZetuneResume2020FallPages.pdf?dl=0');
+                  'https://yonathanzetune.com/resume.pdf');
             },
             padding: EdgeInsets.all(10),
           ),
