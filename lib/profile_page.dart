@@ -1,18 +1,21 @@
 //import 'dart:ui';
 
-import 'package:flutter_particles/particles.dart';
+import 'package:particles_flutter/particles_flutter.dart';
 
 //import 'package:universal_html/prefer_universal/html.dart' as html;
 import 'package:yz_personal_website/responsive_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:universal_html/html.dart' as html;
+import 'package:url_launcher/url_launcher.dart';
+// import 'package:universal_html/html.dart' as html;
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var screenHeight = MediaQuery.of(context).size.height;
+    var screenWidth = MediaQuery.of(context).size.width;
     return ResponsiveWidget(
       largeScreen: Scaffold(
         backgroundColor: Colors.grey[900],
@@ -26,7 +29,32 @@ class ProfilePage extends StatelessWidget {
             padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.1),
             child: ResponsiveWidget(
               largeScreen: Stack(children: [
-                Particles(40, Colors.white30),
+                // Particles(40, Colors.white30),
+                CircularParticle(
+                  key: UniqueKey(),
+                  awayRadius: 80,
+                  numberOfParticles: 200,
+                  speedOfParticles: 1,
+                  height: screenHeight,
+                  width: screenWidth,
+                  onTapAnimation: true,
+                  particleColor: Colors.white.withAlpha(150),
+                  awayAnimationDuration: Duration(milliseconds: 600),
+                  maxParticleSize: 8,
+                  isRandSize: true,
+                  isRandomColor: true,
+                  randColorList: [
+                    Colors.red.withAlpha(210),
+                    Colors.white.withAlpha(210),
+                    Colors.yellow.withAlpha(210),
+                    Colors.green.withAlpha(210)
+                  ],
+                  awayAnimationCurve: Curves.easeInOutBack,
+                  enableHover: true,
+                  hoverColor: Colors.white,
+                  hoverRadius: 90,
+                  connectDots: false, //not recommended
+                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
@@ -50,6 +78,17 @@ class ProfilePage extends StatelessWidget {
   }
 }
 
+Future<void> _launchInWebViewWithJavaScript(String url) async {
+  if (!await launch(
+    url,
+    forceSafariVC: true,
+    forceWebView: true,
+    enableJavaScript: true,
+  )) {
+    throw 'Could not launch $url';
+  }
+}
+
 class NavHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveWidget(
@@ -62,44 +101,39 @@ class NavHeader extends StatelessWidget {
           PKDot(),
 //          Spacer(),
           if (!ResponsiveWidget.isSmallScreen(context))
-          Row(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: RaisedButton(
-                    child: Text("Apps"),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: RaisedButton(
+                      child: Text("Apps"),
+                      onPressed: () {
+                        _launchInWebViewWithJavaScript(
+                            'https://apps.apple.com/us/developer/yonathan-zetune/id1447059513');
+                      }),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: RaisedButton(
+                    child: Text("Projects"),
                     onPressed: () {
-                      html.window.open(
-                          'https://apps.apple.com/us/developer/yonathan-zetune/id1447059513',
-                          'iosApps');
-                    }),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: RaisedButton(
-                  child: Text("Projects"),
-                  onPressed: () {
-                    html.window.open(
-                        'https://github.com/YonathanZetune?tab=repositories',
-                        'githubrepos');
-                  },
+                      _launchInWebViewWithJavaScript(
+                          'https://github.com/YonathanZetune?tab=repositories');
+                    },
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: RaisedButton(
-                  child: Text("Contact"),
-                  onPressed: () {
-                    html.window.open(
-                        'https://www.linkedin.com/in/yzetune/', 'contactemail');
-//                  html.window.open(
-//                      'https://cli.re/GXDNPA',
-//                      'contactemail');
-                  },
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: RaisedButton(
+                    child: Text("Contact"),
+                    onPressed: () {
+                      _launchInWebViewWithJavaScript(
+                          'https://www.linkedin.com/in/yzetune/');
+                    },
+                  ),
                 ),
-              ),
-            ],
-          )
+              ],
+            )
         ],
       ),
     );
@@ -203,7 +237,8 @@ class ProfileInfo extends StatelessWidget {
       ),
       AutoSizeText(
         "Studying at Texas A&M University in College Station, TX.\n"
-        "Previous Android Mobile Development Intern at The Washington Post.\n"
+        "Previous Google SWE Intern, American Express Intern, \n"
+        "and Android Mobile Development Intern at The Washington Post.\n"
         "Some of my projects include TAMU Spirit and FRC Now\n",
         softWrap: true,
         textScaleFactor: 1.5,
@@ -221,9 +256,8 @@ class ProfileInfo extends StatelessWidget {
             child: AutoSizeText("Resume"),
             color: Colors.red,
             onPressed: () {
-              html.window.open(
-                  'https://www.dropbox.com/s/b7iogiceqxkevtj/ZetuneResume2020FallPages.pdf?dl=0',
-                  'resume');
+              _launchInWebViewWithJavaScript(
+                  'https://www.dropbox.com/s/b7iogiceqxkevtj/ZetuneResume2020FallPages.pdf?dl=0');
             },
             padding: EdgeInsets.all(10),
           ),
@@ -283,9 +317,9 @@ class SocialInfo extends StatelessWidget {
                 child: RaisedButton(
                   child: Text("Github"),
                   onPressed: () {
+                    _launchInWebViewWithJavaScript(
+                        'https://github.com/YonathanZetune');
 //                  Navigator.of(context).pushNamed('/Github');
-                    html.window
-                        .open('https://github.com/YonathanZetune', 'github');
                   },
                   color: Colors.blue,
                 ),
@@ -295,8 +329,8 @@ class SocialInfo extends StatelessWidget {
                 child: RaisedButton(
                   child: Text("Linkedin"),
                   onPressed: () {
-                    html.window
-                        .open('https://www.linkedin.com/in/yzetune/', 'linkedin');
+                    _launchInWebViewWithJavaScript(
+                        'https://www.linkedin.com/in/yzetune/');
                   },
                   color: Colors.blue,
                 ),
@@ -306,8 +340,8 @@ class SocialInfo extends StatelessWidget {
                 child: RaisedButton(
                   child: Text("Facebook"),
                   onPressed: () {
-                    html.window.open(
-                        'https://www.facebook.com/yonathan.zetune', 'facebook');
+                    _launchInWebViewWithJavaScript(
+                        'https://www.facebook.com/yonathan.zetune');
                   },
                   color: Colors.blue,
                 ),
@@ -315,7 +349,7 @@ class SocialInfo extends StatelessWidget {
             ],
           ),
           AutoSizeText(
-            "Yonathan Zetune ©️2019",
+            "Yonathan Zetune ©️2022",
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.grey,
@@ -331,8 +365,9 @@ class SocialInfo extends StatelessWidget {
             child: RaisedButton(
               child: Text("Github"),
               onPressed: () {
+                _launchInWebViewWithJavaScript(
+                    'https://github.com/YonathanZetune');
 //                  Navigator.of(context).pushNamed('/Github');
-                html.window.open('https://github.com/YonathanZetune', 'github');
               },
               color: Colors.blue,
             ),
@@ -343,8 +378,8 @@ class SocialInfo extends StatelessWidget {
               padding: EdgeInsets.all(4.0),
               child: Text("Linkedin"),
               onPressed: () {
-                html.window
-                    .open('https://www.linkedin.com/in/yzetune/', 'linkedin');
+                _launchInWebViewWithJavaScript(
+                    'https://www.linkedin.com/in/yzetune/');
               },
               color: Colors.blue,
             ),
@@ -354,8 +389,9 @@ class SocialInfo extends StatelessWidget {
             child: RaisedButton(
               child: Text("Facebook"),
               onPressed: () {
-                html.window
-                    .open('https://www.facebook.com/yonathan.zetune', 'facebook');
+                _launchInWebViewWithJavaScript(
+                  'https://www.facebook.com/yonathan.zetune',
+                );
               },
               color: Colors.blue,
             ),
